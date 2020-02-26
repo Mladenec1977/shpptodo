@@ -1,5 +1,5 @@
 const url = "https://aboyko.shpp.me/serv-api-v2/";
-const site = "https://alerez.github.io/ToDov2/login.html";
+const site = "https://shpptodo.herokuapp.com/ToDov2/login.html";
 let vue = new Vue({
 	el: '#app',
 	data: {

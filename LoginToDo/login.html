@@ -37,6 +37,7 @@
 					fetch(url + 'login.php', {
 						method: 'POST',
 						body: request,
+						credentials: "same-origin"
 						headers: {
 							'Content-Type': 'application/json;'
 						},

@@ -84,7 +84,7 @@ let vue = new Vue({
 		},
 		getPost: function(){
 			let request = JSON.stringify({text: this.new_task.text});
-			fetch(url + 'addItems.php', {
+			fetch(url + 'addItem.php', {
 				method: 'POST',
 				body: request,
 				headers: {

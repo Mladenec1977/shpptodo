@@ -146,6 +146,7 @@ let vue = new Vue({
 		exit(){
 			fetch(url + 'logout.php', {
 				method: 'POST',
+				credentials: 'include',
 			}).then(res => res.json())
 				.then((response) => {
 					if(response.ok){

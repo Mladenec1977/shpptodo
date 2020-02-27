@@ -141,7 +141,7 @@ let vue = new Vue({
 			this.items[index].inputedit = '';
 		},
 		exit(){
-			fetch(url + 'addItems.php', {
+			fetch(url + 'logout.php', {
 				method: 'POST',
 			}).then(res => res.json())
 				.then((response) => {

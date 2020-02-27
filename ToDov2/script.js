@@ -56,7 +56,7 @@ let vue = new Vue({
 	},
 	methods: {
 		getItems: function(){
-			fetch(url + 'getItems.php')
+			fetch(url + 'getItems.php', {credentials: 'include'})
 				.then(res => res.json())
 				.then((response) => {
 					this.items = response.items.map((item) => {
@@ -70,6 +70,7 @@ let vue = new Vue({
 			fetch(url + 'deleteItem.php', {
 				method: 'DELETE',
 				body: request,
+				credentials: 'include',
 				headers: {
 					'Content-Type': 'application/json;'
 				},
@@ -87,6 +88,7 @@ let vue = new Vue({
 			fetch(url + 'addItem.php', {
 				method: 'POST',
 				body: request,
+				credentials: 'include',
 				headers: {
 					'Content-Type': 'application/json;'
 				},
@@ -105,6 +107,7 @@ let vue = new Vue({
 			fetch(url + 'changeItem.php', {
 				method: 'PUT',
 				body: request,
+				credentials: 'include',
 				headers: {
 					'Content-Type': 'application/json;'
 				},
